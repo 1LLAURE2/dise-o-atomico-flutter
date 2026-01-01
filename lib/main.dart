@@ -12,12 +12,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 238, 68, 46),
+        ),
       ),
       home: LoginPage(),
+      // home: Scaffold(
+      //   body: Center(child: Image.asset('assets/images/logo.png')),
+      // ),
     );
   }
 }
