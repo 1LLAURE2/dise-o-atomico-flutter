@@ -14,3 +14,17 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+# LIMPUAR Y RESINTALAR 
+
+flutter clean
+flutter pub get
+flutter run
+
+# PARA DESARROLLO Y ENTREGA
+flutter run	Desarrollar
+flutter build apk	Publicar
+
+# TIP
+flutter build apk --release      # Normal (por defecto)
+flutter build apk --split-per-abi # APKs más livianos

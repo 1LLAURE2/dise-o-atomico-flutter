@@ -2,6 +2,7 @@ import 'package:app_login/design_system/atoms/email_input.dart';
 import 'package:app_login/design_system/atoms/forgot_password_link.dart';
 import 'package:app_login/design_system/atoms/password_input.dart';
 import 'package:app_login/design_system/atoms/primary_button.dart';
+import 'package:app_login/design_system/pages/dashboard.dart';
 // import 'package:app_login/design_system/molecules/labeled_input.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +23,16 @@ class LoginForm extends StatelessWidget {
           },
         ),
         const SizedBox(height: 24),
-        PrimaryButton(text: 'Continue', onPressed: () {}),
+        PrimaryButton(
+          text: 'Continue',
+          onPressed: () {
+            print("OtraPantalla");
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => DashboardPage()),
+            );
+          },
+        ),
       ],
     );
   }
